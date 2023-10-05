@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -9,9 +11,8 @@ body {
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Noto Sans Georgian', sans-serif;
-    margin: 0;
 }
-h2,h3,h4{
+h3,h4{
     font-family: 'Dela Gothic One', cursive;
 }
 
@@ -26,14 +27,13 @@ a {
 
 .header {
     background-color: #F6F5F4;
-    height: 830px;
+    min-height: 88px;
 }
 
 .container {
     max-width: 1180px;
-    margin-left: auto;
-    margin-right: auto;
     height: 88px;
+    margin: 0 auto;
 }
 
 .header__top {
@@ -49,7 +49,7 @@ a {
     border-bottom: 2px solid #E0E0E0;
     width: 100%;
     position: absolute;
-    top: 95px;
+    top: 88px;
 }
 
 .header__top ul {
@@ -57,8 +57,11 @@ a {
     justify-content: space-between;
 }
 .title{
+    font-family: 'Dela Gothic One', cursive;
     padding-right: 50px;
     font-weight: 400;
+    color: #000;
+    cursor: pointer;
 }
 .title::after{
     content:"";
@@ -66,7 +69,7 @@ a {
     height: 19px;
     width: 3px;
     position: absolute;
-    left: 192px;
+    left: 139px;
     top: 36px;
 }
 .header__top li {
@@ -116,10 +119,15 @@ a {
     color:#000000;
 }
 
+/* section above header */
+
+.about{
+    background-color: #F6F5F4;
+    min-height: 740px;
+}
 .about-box{
-    display: flex;
-    min-height: 510px;
-    margin: 95px auto 95px;
+    padding-top: 95px;
+    display: flex;   
 }
 .left-content{
     width: 530px;
@@ -129,8 +137,13 @@ a {
     width: 100%;
     height: 601px;
     background-image: url(./img/background-about.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+    background-position-x: 488px;
+    box-sizing: border-box;
 }
-.left-content p:nth-child(1){
+.left-content h2{
     margin-left:5px;
     letter-spacing: 2.24px;
     color: #2B788B;
@@ -148,7 +161,7 @@ a {
 .left-content p:nth-child(3){
     font-family: Montserrat;
     color: #757575;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 25px;
     width: 397px;
@@ -158,6 +171,7 @@ a {
 .left-content li{
     display: block;
     text-align: center;
+    margin-top: 32px;
     border-radius: 17px;
     color: #2B788B;
     background-color: #C3DCE3 ;
@@ -171,27 +185,28 @@ a {
     padding-top: 9px;
 }
 .number-items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
     width: 352px;
     height: 65px;
+
 }
 .left-number{
     position: relative;
     width: 163px;
     height: 65px;
+    background-image: url(./img/left-number600.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
-.left-number h4{
-    text-align: center;
-    margin: 25px 0 15px 0;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 40px;
-}.left-number p{
-    margin-top: 0px;
+.left-number p{
     font-size: 16px;
     font-weight: 600;
     font-family: Montserrat;
     color: #585858;
     text-align: center;
+    padding-top: 40px;
 }
 .left-number::before{
     content: "";
@@ -201,12 +216,26 @@ a {
     height: 30px;
     top: 8px;
 }
-.left-number::after{
+.right-number{
+    background-image: url(./img/number2+.png);
+    background-repeat: no-repeat;
+    width: 92px;
+    height: 62px;
+    background-position-x: right;
+}
+.right-number::before{
     content: "";
-    border-bottom: #2B788B solid 5px;
-    border-left: #2B788B solid 5px;
-    blord
-    position: absolute;
     width: 24px;
     height: 30px;
+    position: absolute;
+    background-image: url(./img/right-number2+.png);
+}
+.right-number p{
+    font-family: Montserrat;
+    color: #757575;
+    padding-top: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 99px;
+    height: 22px;
 }
