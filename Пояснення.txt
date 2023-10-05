@@ -27,3 +27,5 @@
 
 
 flex-grow:1;    - вирівнювання дів табоиці по всій ширині екрану
+
+sdfdwagadsgadsgasdg
