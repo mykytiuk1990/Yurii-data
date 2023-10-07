@@ -55,6 +55,7 @@ a {
 .header__top ul {
     display: flex;
     justify-content: space-between;
+    margin-left: 30px;
 }
 .title{
     font-family: 'Dela Gothic One', cursive;
@@ -69,7 +70,7 @@ a {
     height: 19px;
     width: 3px;
     position: absolute;
-    left: 139px;
+    left: 168px;
     top: 36px;
 }
 .header__top li {
@@ -93,7 +94,7 @@ a {
     /* 20.861px */
 }
 .games-svg{
-    padding-right: 120px;
+    padding-right: 50px;
 }
 .games-svg::after {
     content: "";
@@ -136,11 +137,13 @@ a {
 }
 .about-box{
     padding-top: 95px;
-    display: flex;  
+    display: flex;
+    margin: 0 auto;  
 }
 .left-content{
-    width: 530px;
+    max-width: 530px;
     height: 510px;
+    margin-left: 30px;
 }
 .left-content h2{
     margin-left:5px;
@@ -151,7 +154,7 @@ a {
     font-weight: 700;
 }
 .left-content h3{
-    width: 530px;
+    max-width: 530px;
     margin-top: 24px;
     font-size: 56px;
     font-weight: 400;
@@ -267,6 +270,27 @@ a {
     .about-box{
         justify-content: center;
     }
+    .left-content{
+        margin-left: 0;
+    }
+    .left-content h3{
+        font-size: 45px;
+        text-align: center;
+    }
+    .left-content h2{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .left-content p:nth-child(3){
+        text-align: center;
+        margin: 0 auto;
+    }
+    .left-content li{
+        margin: 25px auto;
+    }
+    .number-items{
+        margin: 25px auto;
+    }
 }
 @media (max-width:680px){
     .games-svg{
@@ -275,37 +299,59 @@ a {
 }
 @media (max-width:560px){
     .left-content h3 {
-        width: 530px;
-        margin-top: 22px;
-        font-size: 33px;
+        max-width: 300px;
+        margin: 0 auto;
+        font-size: 27px;
         font-weight: 200;
         line-height: 45px;
     }
-    .about-box {
-        padding: 41px 0 0 100px;
-    }
+   .about-box{
+        padding-top: 5px;
+   }
     .header__top ul{
         flex-direction: column;
-    }    
+        margin: 13px auto;
+    }
     .about{
         padding-top: 90px;
+    }
+    .right-nav{
+        margin-top: 20px;
     }
     .header.container-line::after{
         content: none;
     }
     .left-content h2{
         font-size: 13px;
-        margin: 10%;
-    }
-    .left-content h3 {
-        width: 400px;
+        width: 276px;
+        text-align: center;
     }
     .left-content p:nth-child(3){
-        width: 340px;  
+       max-width: 300px;  
     }
     .number-items{
-        justify-content: left;
+        justify-content: center;
     }
-    
 }
+@media (max-width:400px){
+    .header__top{
+        display: table;
+    }
+    .about-box{
+        padding-top: 40px;
+    }
+    .left-content h3{
+        font-size: 22px;
+        width: 200px;
+    }
+    .number-items{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+    .left-content p:nth-child(3){
+        max-width: 200px;  
+    }
+}
+
     
