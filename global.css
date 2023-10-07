@@ -405,4 +405,6 @@ section p{
 }
 .textbook-img{
     margin-top: 26px;
+    max-width: 581px;
+    max-height: 475px ;
 }
