@@ -15,7 +15,12 @@ body {
 h3,h4{
     font-family: 'Dela Gothic One', cursive;
 }
+ul{
+    color: #757575;
+    font-family: Montserrat;
+}
 p{
+
     font-family: Montserrat;
 }
 
@@ -366,27 +371,30 @@ section p{
     color: #757575;
     font-size: 18px;
     line-height: 25px;
-    margin: 30px auto;
+    margin: 34px auto;
 }
     
-.learn{
-    padding: 78px 0;
-}
-.learn-set{
+.container-set{
     display: flex;
     justify-content: space-between;
 }
 .learn-box{
+    margin: 121px auto;
     max-width: 475px;
     max-height: 351px;
 }
-.learn-title{
+.section-title{
     font-weight: 400;
     font-size: 48px;
     line-height: 100%;
     letter-spacing: -1.92px;
 }
-.learn-img{
+.learn-background{
+    margin: 78px auto;
+    width: 580px;
+    height: 445px;
+}
+.learn-button{
     margin: 44px auto;
 }
 .learn-img img:first-child{
@@ -408,3 +416,69 @@ section p{
     max-width: 581px;
     max-height: 475px ;
 }
+
+ /* section-statistics */
+
+ .statistics-img{
+    margin: 96px auto;
+ }
+ .statistics-box{
+    max-width: 475px;
+    max-height: 302px;
+    margin: 149px auto;
+ }
+
+ /* FOOTER - SECTION */
+.footer{
+    background-color: #F6F5F4;
+    min-height: 160px;
+}
+.footer-container{
+    justify-content: ;
+}
+.footer-box{
+    font-weight: 600;
+    margin: 40px auto;
+    
+}
+ .footer-box_top{
+    display: flex;
+    justify-content: space-between;
+    max-height: 20px;
+    margin: 40px auto 0;
+    position: relative;
+ }
+ .footer-box_top::after{
+    content: "";
+    border-bottom: #E0E0E0 solid;
+    width: 100%;
+    max-height: 1px;
+    position: absolute;
+    bottom: -20px;
+}
+ .footer-box_top ul{
+    display: flex;
+    font-size: 14px;
+    font-family: Montserrat;
+ }
+ .footer-box_top ul li:not(:last-child){
+    padding-right: 30px;
+ }
+ .footer-box_bottom{
+    margin: 40px auto;
+    max-height: 26px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .footer-icon{
+    margin-top: -10px;
+ }
+ .project{
+    font-size: 12px;
+    color: #757575;
+    margin-top: -7px;
+    font-weight: 600;
+ }
+ .project span{
+    text-decoration-line: underline;
+ }
